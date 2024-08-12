@@ -1,0 +1,16 @@
+.copy-tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+/* 悬浮提示框 */
+#props-tooltip {
+  position: absolute;
+  color: rgba(0, 0, 0, .75);
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 4px 8px;
+  box-shadow: 0 0 5px #ccc;
+  white-space: nowrap;
+  z-index: 1;
+}
