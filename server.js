@@ -6,14 +6,14 @@ const app = express();
 const server = https.createServer(app);
 const io = require("socket.io")(server, {
 	cors: {
-		origin: "https://192.168.100.12:3000",
+		origin: "http://192.168.100.12:3000",
 		methods: ["GET", "POST"]
 	}
 });
 
 // Use CORS middleware
 app.use(cors({
-    origin: "https://192.168.100.12:3000", // Update this to match the frontend origin
+    origin: "http://192.168.100.12:3000", // Update this to match the frontend origin
     methods: ["GET", "POST"]
 }));
 
